@@ -13,4 +13,3 @@ const cutHalf = halfNumber(100);
 
 console.log("Ten times:", output);
 console.log("Half Number:", cutHalf);
-jj
