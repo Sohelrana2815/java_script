@@ -11,6 +11,15 @@ function halfNumber(number) {
 const output = tenTimes(77);
 const cutHalf = halfNumber(100);
 
-console.log("Ten times:", output);
-console.log("Half Number:", cutHalf);
-jj
+// console.log("Ten times:", output);
+// console.log("Half Number:", cutHalf);
+
+// Some logic or exercise added
+
+function square(num) {
+  const result = num * num;
+  return result;
+}
+
+const number = square(13);
+console.log(number);
