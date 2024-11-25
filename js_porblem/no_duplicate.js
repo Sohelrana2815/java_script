@@ -21,4 +21,30 @@ function noDuplicate(arr) {
 }
 
 const uniqueArr = noDuplicate(numbers);
-console.log(uniqueArr);
+// console.log(uniqueArr);
+
+// Remove duplicate from an array
+
+const noDuplicateArray = [
+  "john",
+  "weak",
+  "smith",
+  "henry",
+  "sam",
+  "sam",
+  "smith",
+  "john",
+];
+
+function removeDuplicate(arr) {
+  const uniqueName = [];
+  for (const element of arr) {
+    if (uniqueName.includes(element) === false) {
+      uniqueName.push(element);
+    }
+  }
+  return uniqueName;
+}
+
+const uniqueNames = removeDuplicate(noDuplicateArray);
+console.log(uniqueNames);
