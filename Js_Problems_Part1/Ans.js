@@ -101,3 +101,11 @@ function getVowels(str) {
 
 const output2 = getVowels("Hello world, how are you");
 console.log(output2);
+
+// Find the longest word in a string
+
+function longestString(str) {
+  console.log(str);
+}
+
+const sentence = longestString("My name is Sohel Rana and I am 23 years old");
