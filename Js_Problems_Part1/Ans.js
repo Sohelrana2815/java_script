@@ -54,20 +54,50 @@ function celsiusToFahrenheit(celsius) {
 
 // 2nd method
 
-const numbers = [5, 6, 11, 12, 98, 5];
-const target = 5; // The number to find
+const numbers = [2, 5, 7, 9, 10, 5, 5, 25, 25, 25, 5];
 
-function countOccurrences(array, num) {
-  let count = 0; // Initialize count
-  for (let i = 0; i < array.length; i++) {
-    // Loop through each element
-    if (array[i] === num) {
-      // Check if the element matches the target
-      count++; // Increment count
+const targetNumber = 25;
+
+function countSpecificNumber(arr, num) {
+  let count = 0;
+
+  for (const element of arr) {
+    if (element === num) {
+      count++;
     }
   }
-  return count; // Return the total count
+  return count;
 }
 
-const result = countOccurrences(numbers, target);
-console.log(`The number ${target} is repeated ${result} times.`); // Output: 2
+const output = countSpecificNumber(numbers, targetNumber);
+
+console.log(`The ${targetNumber} is repeated ${output} times`);
+
+// const numbers = [5, 6, 11, 12, 98, 5];
+// const target = 5; // The number to find
+
+// function countOccurrences(array, num) {
+//   let count = 0; // Initialize count
+//   for (let i = 0; i < array.length; i++) {
+//     // Loop through each element
+//     if (array[i] === num) {
+//       // Check if the element matches the target
+//       count++; // Increment count
+//     }
+//   }
+//   return count; // Return the total count
+// }
+
+// const result = countOccurrences(numbers, target);
+// console.log(`The number ${target} is repeated ${result} times.`); // Output: 2
+
+// // ### Task-3:
+// Write a function to count the number of vowels in a string.
+
+function getVowels(str) {
+  let m = str.match(/[aeiou]/gi);
+  return m === null ? 0 : m.length;
+}
+
+const output2 = getVowels("Hello world, how are you");
+console.log(output2);
