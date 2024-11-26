@@ -71,7 +71,7 @@ function countSpecificNumber(arr, num) {
 
 const output = countSpecificNumber(numbers, targetNumber);
 
-console.log(`The ${targetNumber} is repeated ${output} times`);
+// console.log(`The ${targetNumber} is repeated ${output} times`);
 
 // const numbers = [5, 6, 11, 12, 98, 5];
 // const target = 5; // The number to find
@@ -99,13 +99,23 @@ function getVowels(str) {
   return m === null ? 0 : m.length;
 }
 
-const output2 = getVowels("Hello world, how are you");
-console.log(output2);
+// const output2 = getVowels("Hello world, how are you");
+// console.log(output2);
 
 // Find the longest word in a string
 
-function longestString(str) {
-  console.log(str);
+const sentence = "My name is Sohel Rana and i am 23 years old.";
+
+function findLongestWord(sentence) {
+  const words = sentence.split(" ");
+  let longestWord = "";
+  for (let word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return longestWord;
 }
 
-const sentence = longestString("My name is Sohel Rana and I am 23 years old");
+const longestWord = findLongestWord(sentence);
+console.log(longestWord);
