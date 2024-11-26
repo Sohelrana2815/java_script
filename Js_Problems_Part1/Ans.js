@@ -91,7 +91,7 @@ const output = countSpecificNumber(numbers, targetNumber);
 // const result = countOccurrences(numbers, target);
 // console.log(`The number ${target} is repeated ${result} times.`); // Output: 2
 
-// // ### Task-3:
+//  ### Task-3:
 // Write a function to count the number of vowels in a string.
 
 function getVowels(str) {
@@ -102,7 +102,8 @@ function getVowels(str) {
 // const output2 = getVowels("Hello world, how are you");
 // console.log(output2);
 
-// Find the longest word in a string
+// ### Task-4:
+// Write a function to find the longest word in a given string.
 
 const sentence = "My name is Sohel Rana and i am 23 years old.";
 
@@ -116,6 +117,14 @@ function findLongestWord(sentence) {
   }
   return longestWord;
 }
-
 const longestWord = findLongestWord(sentence);
-console.log(longestWord);
+
+// console.log(longestWord);
+
+// ### Task-5:
+// Generate a random number between 10 to 20.
+
+let randomNumber = Math.random() * 10;
+
+const integerNumberOneToTen = Math.round(randomNumber);
+console.log(integerNumberOneToTen);
