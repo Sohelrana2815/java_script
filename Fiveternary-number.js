@@ -10,3 +10,15 @@ write a simple if-else.
 also, write it using ternary operator.
 
  */
+
+const num1 = 15;
+
+const num2 = 10;
+
+if (num1 > num2) {
+  const result1 = num1 * 2;
+  console.log(`Double of ${num1} is: `, result1);
+} else {
+  const result2 = num1 + num2;
+  console.log(`Sum of ${num1} and ${num2} is: `, result2);
+}
