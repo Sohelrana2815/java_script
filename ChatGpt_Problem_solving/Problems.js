@@ -20,14 +20,18 @@ function reverseString(str) {
 
 // 3. Max number
 
-const array = [3, 5, 66, 48, 96, 13, 12, -6, 454];
+const numbers = [100, 2, 3, 5, 86, 41];
+function findMaxNumber(arr) {
+  // Initialize a variable to store the maximum value
+  let max = arr[0];
 
-let maxNumber = [0];
-
-for (const element of array) {
-  if (element > maxNumber) {
-    maxNumber = element;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
   }
+  return max;
 }
 
-console.log(maxNumber);
+const result = findMaxNumber(numbers);
+console.log(result);
