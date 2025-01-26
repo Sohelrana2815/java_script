@@ -8,3 +8,8 @@ let myObject = {
 for (const [prop, val] of Object.entries(myObject)) {
   console.log(`key: ${prop} | type: ${typeof val}`);
 }
+
+
+
+
+
