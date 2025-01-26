@@ -43,4 +43,18 @@ let result = "";
 for (const name of names) {
   result += name;
 }
-console.log(result);
+// console.log(result);
+
+// task 4
+
+const sentence = "I am hard working person.";
+
+const words = sentence.split(" ");
+
+const reversedWords = words.reverse();
+
+const reverseSentence = reversedWords.join(" ");
+
+console.log(reverseSentence);
+
+
