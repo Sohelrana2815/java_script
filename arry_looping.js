@@ -23,4 +23,24 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 
-console.log(`even numbers: ${evenNumbers}`);
+// console.log(`even numbers: ${evenNumbers}`);
+
+// Task 3
+// Use a for...of loop to concatenate all the elements of an array into a single string.
+
+// Input: var numbers = ['Tom', 'Tim', 'Tin', 'Tik']
+
+// Output: 'TomTimTinTik'
+
+// initialize the string
+
+const names = ["tom", "tim", "tik", "ton"];
+
+// Declare a variable to stored the concatenated value
+
+let result = "";
+
+for (const name of names) {
+  result += name;
+}
+console.log(result);
