@@ -22,10 +22,27 @@ const num1 = 9;
 
 const result1 = processNumber(num1);
 
-console.log(`Result for num1: ${result1}`);
+// console.log(`Result for num1: ${result1}`);
 
 const num2 = 10;
 
 const result2 = processNumber(num2);
 
-console.log(`Result for num2: ${result2}`);
+// console.log(`Result for num2: ${result2}`);
+
+// Task 3
+
+function make_avg(arr, size) {
+  let sum = 0;
+
+  for (let i = 0; i < size; i++) {
+    sum = sum + arr[i];
+  }
+  return sum / size;
+}
+
+const numbers = [10, 20, 30, 40, 50];
+
+const avg = make_avg(numbers, numbers.length);
+
+console.log("Average:", avg);
