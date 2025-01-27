@@ -46,3 +46,24 @@ const numbers = [10, 20, 30, 40, 50];
 const avg = make_avg(numbers, numbers.length);
 
 console.log("Average:", avg);
+
+// task 4
+
+function count_zero(binaryString) {
+  let count = 0;
+
+  for (let i = 0; i < binaryString.length; i++) {
+    if (binaryString[i] === "0") {
+      count++;
+    }
+  }
+  return count;
+}
+
+const str1 = "101010";
+const str2 = "111111";
+const str3 = "000000";
+
+console.log("Number of zeros in '" + str1 + "':", count_zero(str1));
+console.log("Number of zeros in '" + str1 + "':", count_zero(str2));
+console.log("Number of zeros in '" + str1 + "':", count_zero(str3));
