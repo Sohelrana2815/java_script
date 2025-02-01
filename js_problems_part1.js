@@ -40,4 +40,30 @@ function countVowels(str) {
   return count;
 }
 
-console.log(countVowels(str));
+// console.log(countVowels(str));
+
+// task4
+
+function findLongestWord(str) {
+  const words = str.split(" ");
+  let longestWord = "";
+  let maxLength = 0;
+
+  for (let word of words) {
+    if (word.length > maxLength) {
+      longestWord = word;
+      maxLength = word.length;
+    }
+  }
+  return longestWord;
+}
+
+const input = "I am learning Programming to become a programmer";
+const result = findLongestWord(input);
+
+// console.log(result);
+
+// task 5
+
+const randomNumber = Math.floor(Math.random() * 11) + 10;
+console.log(randomNumber);
