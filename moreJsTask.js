@@ -61,4 +61,53 @@ function filterEvenNumbers(numbers) {
 
 const numbers = [35, 13, 24, 8, 40];
 
-console.log(filterEvenNumbers(numbers));
+// console.log(filterEvenNumbers(numbers));
+
+// Task 5 Calculate total price of books
+
+function calculateTotalBookPrice(books) {
+  const totalPrice = books.reduce(
+    (total, book) => total + book.price * book.quantity,
+    0
+  );
+  return totalPrice;
+}
+
+const books = [
+  { title: "JS Basic", price: 200, quantity: 3 },
+  { title: "Advanced JS", price: 300, quantity: 2 },
+];
+// console.log(calculateTotalBookPrice(books));
+
+// Task 6
+function findOldestPerson(people) {
+  if (people.length === 0) return null; // Handle empty array case
+
+  return people.reduce((oldest, person) => 
+    person.age > oldest.age ? person : oldest
+  ).name;
+}
+
+// Example usage:
+const peoples = [
+  { name: "Alice", age: 33 },
+  { name: "Bob", age: 45 },
+  { name: "Charlie", age: 50 }
+];
+
+console.log(findOldestPerson(people)); // Output: "Charlie"
+
+// task 7
+
+function isValidPassword(password) {
+  //Check if password meets all criteria
+
+  return (
+    password.length >= 8 && // at least 8 characters
+    /[A-Z]/.test(password) && // contains at least one uppercase letter
+    /\d/.test(password) // one number
+  );
+}
+
+console.log(isValidPassword("Secret123"));
+console.log(isValidPassword("foobar1G"));
