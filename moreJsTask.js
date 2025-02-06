@@ -1,15 +1,36 @@
-// find the longest word
+// task 6 Find the Oldest Person
 
-function findLongestWord(words) {
-  const longestWord = words.reduce((longest, currentWord) => {
-    return currentWord.length > longest.length ? currentWord : longest;
-  }, "");
-
-  return longestWord;
+function findOldestPerson(peopleObj) {
+  const oldestPerson = peopleObj.reduce((oldest, person) =>
+    person.age > oldest.age ? person : oldest
+  ).name;
+  return oldestPerson;
 }
 
-const words = ["apple", "banana", "cherry", "dragonFruit"];
+const people = [
+  { name: "Alice", age: 33 },
+  { name: "Bob", age: 45 },
+];
 
-const longestWord = findLongestWord(words);
+console.log(findOldestPerson(people), "is the oldest person");
 
-console.log(longestWord);
+// task 9 Shopping Cart Total
+
+function calculateTotal(cartItems, discountPercentage) {
+  const totalPrice = cartItems.reduce((acc, cart) => {
+    return acc + cart.price * cart.quantity;
+  }, 0);
+
+  const discount = (totalPrice * discountPercentage) / 100;
+
+  const discountedPrice = totalPrice - discount;
+
+  return discountedPrice;
+}
+
+const cart = [
+  { item: "Shirt", price: 500, quantity: 2 },
+  { item: "Shoes", price: 1000, quantity: 1 },
+];
+
+console.log(calculateTotal(cart, 20));
